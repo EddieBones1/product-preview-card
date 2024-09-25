@@ -11,6 +11,69 @@ body {
   background-color: hsl(30, 38%, 92%);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+}
+
+.column {
+  flex: 1;
+  padding-right: 1.25rem;
+}
+
+.image img {
+  width: 31.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  height: 100%;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  position: absolute;
+  bottom: 43rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  width: 15rem;
+  display: flex;
+  position: absolute;
+  bottom: 32rem;
+}
+
+p {
+  font-family: "montserrat", sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

@@ -11,9 +11,65 @@ body{
     background-color: $cream;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color:$white;
+    border-radius:0.625rem;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 60rem; // Set a specific width for the container
+}
+.column {
+    flex: 1;
+    padding-right: 1.25rem;  
+}
+.image img{
+    width:31.25rem;
+    border-radius:0.625rem;
+    height: auto;
+    object-fit: fill;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; // Space text elements evenly
+    justify-content: space-between; // Space text elements evenly
+    height: 100%; // Ensure the container takes full height
+}
 
+span{
+  font-family: 'Montserrat', sans-serif;
+  color: $dark-grayish-blue;
+  font-weight: $fw-500;
+  font-size: 1rem;
+  display:flex;
+  position:absolute;
+  bottom:43rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  
+}
+h1{
+    font-family: 'Fraunces', serif;
+    color: $very-dark-blue;
+    font-weight: $fw-700;
+    font-size: 2.5rem;
+    line-height:1.2;  // Adjust line height for better readability
+    width:15rem; // Set a width to force text to wrap to multiple lines
+    display:flex;
+    position:absolute;
+    bottom:32rem;
+}
 
-
+p{
+    font-family: 'montserrat', sans-serif;
+}
+    
 
 
 
