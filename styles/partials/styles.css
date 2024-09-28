@@ -9,20 +9,27 @@
 
 body {
   background-color: hsl(30, 38%, 92%);
+  display: flex;
+  width: 90rem;
+  height: 50rem;
+  padding: 10.94rem 26.25rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  background-color: hsl(0, 0%, 100%);
+  width: 37.5rem;
+  height: 28.125rem;
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: row;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 0.625rem;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60rem;
 }
 
 .column {
@@ -31,17 +38,16 @@ body {
 }
 
 .image img {
-  width: 31.25rem;
-  border-radius: 0.625rem;
-  height: auto;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 21rem;
+  height: 28.125rem;
+  padding-right: 2.4rem;
+  flex-shrink: 0;
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
   justify-content: space-between;
   height: 100%;
 }
@@ -50,10 +56,13 @@ span {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
   font-weight: 500;
-  font-size: 1rem;
+  inset: 2rem 11.03rem 25.19rem 20.72rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 5px;
   display: flex;
   position: absolute;
-  bottom: 43rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -61,17 +70,84 @@ span {
 h1 {
   font-family: "Fraunces", serif;
   color: hsl(212, 21%, 14%);
+  inset: 4.19rem 2rem 17.94rem 20.75rem;
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  width: 15rem;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 2rem;
+  width: 14.75rem;
   display: flex;
   position: absolute;
-  bottom: 32rem;
 }
 
 p {
   font-family: "montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  position: absolute;
+  inset: 11.69rem 1.97rem 10.69rem 20.72rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4375rem;
+}
+
+.price h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  position: absolute;
+  inset: 19.25rem 8.81rem 6.87rem 20.75rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.price p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  position: fixed;
+  inset: 19.56rem 4.62rem 7.13rem 29.88rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4375rem; /* 176.923% */
+}
+
+.btn {
+  width: 14.75rem;
+  height: 3rem;
+  position: fixed;
+  inset: 23.12rem 2rem 2rem 20.75rem;
+  border-radius: 0.5rem;
+  background-color: hsl(158, 36%, 37%);
+  flex-shrink: 0;
+}
+
+button {
+  /* Button Text */
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  right: 18%;
+}
+
+.btn img {
+  display: inline-flex;
+  outline: none;
+  color: hsl(0, 0%, 100%);
+  height: 1rem;
+  width: 0.89906rem;
+  margin-right: 6;
+  position: relative;
+  left: -201.96px;
+  top: -43px;
+  z-index: 1;
+  height: 1rem;
 }
 
 .attribution {
