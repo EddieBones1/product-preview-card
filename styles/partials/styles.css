@@ -155,17 +155,23 @@ button {
 .attribution {
   display: flex;
   text-align: center;
-  position: absolute;
-  top: 78%;
-  left: 43%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 75%;
   font-size: 0.6875rem;
-  text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (width >= 240rem) {
+  .attribution {
+    left: 50%;
+    top: 75%;
+  }
+}
 @media screen and (width <= 24rem) {
   body {
     display: flex;
@@ -282,10 +288,8 @@ button {
     height: 1rem;
   }
   .attribution {
-    display: inline-flex;
-    position: absolute;
-    left: 4.37rem;
-    top: 53.4rem;
+    left: 40%;
+    top: 63%;
     font-size: 11px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,10 @@
+@media screen and (width >= 240rem) /*240rem=3840px*/{
+  .attribution{
+  left:50%;
+  top:75%;
+  }
+}
+
 @media screen and (width <= 24rem) /* 24rem= 375px*/ {
   body {
     display: flex;
@@ -118,10 +125,9 @@ button {
   height: 1rem;
 }
 .attribution {
-  display: inline-flex;
-  position: absolute;
-  left: 4.37rem;
-  top: 53.4rem;
+
+  left: 40%;
+  top: 63%;
   font-size: 11px;
 }
 }
