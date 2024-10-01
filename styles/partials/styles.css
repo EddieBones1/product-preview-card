@@ -173,7 +173,7 @@ button {
     top: 75%;
   }
 }
-@media screen and (max-width: 24rem) {
+@media screen and (width <= 24rem) {
   body {
     display: flex;
     width: 23.4375rem;

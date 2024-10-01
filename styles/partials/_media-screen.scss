@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (max-width: 24rem) /* 24rem= 375px*/ {
+@media screen and (width <= 24rem) /* 24rem= 375px*/ {
   body {
     display: flex;
     width: 23.4375rem;
