@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (width <= 24rem) /* 24rem= 375px*/ {
+@media screen and (max-width: 24rem) /* 24rem= 375px*/ {
   body {
     display: flex;
     width: 23.4375rem;
@@ -22,10 +22,12 @@
     border-radius: 0.625rem; 
   }
   .image img {
-    width: 100%;
+    content:url($mobile-image);
+    width: 21.48106rem;
+    height:28.625rem;
     position: absolute;
     height: auto;
-    inset: -0.06rem 0.05rem 16.37rem 0.01rem;
+    inset: 6.81rem 0.05rem 16.47rem 0.01rem;
     border-radius: 0.625rem;
     padding-right: 0;
     flex-shrink: 0;

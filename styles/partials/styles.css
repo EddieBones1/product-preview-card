@@ -1,4 +1,5 @@
 /* font-sizes */
+/*mobile image */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 * {
@@ -172,7 +173,7 @@ button {
     top: 75%;
   }
 }
-@media screen and (width <= 24rem) {
+@media screen and (max-width: 24rem) {
   body {
     display: flex;
     width: 23.4375rem;
@@ -189,10 +190,12 @@ button {
     border-radius: 0.625rem;
   }
   .image img {
-    width: 100%;
+    content: url("images/image-product-mobile.jpg");
+    width: 21.48106rem;
+    height: 28.625rem;
     position: absolute;
     height: auto;
-    inset: -0.06rem 0.05rem 16.37rem 0.01rem;
+    inset: 6.81rem 0.05rem 16.47rem 0.01rem;
     border-radius: 0.625rem;
     padding-right: 0;
     flex-shrink: 0;
