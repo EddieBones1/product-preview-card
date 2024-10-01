@@ -22,7 +22,7 @@
     border-radius: 0.625rem; 
   }
   .image img {
-    content: url("/images/image-product-mobile.jpg");
+    content: url(#{$image-mobile}); // Use the mobile image variable
     width: 100%;
     position: absolute;
     height: auto;
