@@ -1,7 +1,5 @@
 /* font-sizes */
 /*mobile image */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,155 +9,131 @@
 body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
-  width: 90rem;
-  height: 50rem;
-  padding: 10.94rem 26.25rem;
+  width: 100%;
+  height: 100vh;
+  padding: 1.75rem 1rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container {
+#container {
   background-color: hsl(0, 0%, 100%);
-  width: 37.5rem;
-  height: 28.125rem;
+  width: 21.4375rem;
+  height: 38.1875rem;
+  flex-shrink: 0;
   border-radius: 0.625rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.column {
-  flex: 1;
-  padding-right: 1.25rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image img {
-  width: 21rem;
-  height: 28.125rem;
-  padding-right: 2.4rem;
+  margin-top: -1.4375rem;
+  width: 21.48106rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  height: auto;
   flex-shrink: 0;
 }
 
 .text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: space-between;
-  height: 100%;
+  padding: 0 1.5rem 0 1.5rem;
 }
 
-span {
-  font-family: "Montserrat", sans-serif;
+.category {
   color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  inset: 2rem 11.03rem 25.19rem 20.72rem;
-  font-size: 0.75rem;
   font-style: normal;
+  font-size: 0.75rem;
   line-height: normal;
-  letter-spacing: 5px;
-  display: flex;
-  position: absolute;
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
+  margin-top: 0.875rem;
 }
 
 h1 {
-  font-family: "Fraunces", serif;
   color: hsl(212, 21%, 14%);
-  inset: 4.19rem 2rem 17.94rem 20.75rem;
-  font-weight: 700;
+  font-family: "Fraunces", serif;
   font-size: 2rem;
   font-style: normal;
+  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  font-weight: 700;
   line-height: 2rem;
-  width: 14.75rem;
-  display: flex;
-  position: absolute;
 }
 
-p {
-  font-family: "montserrat", sans-serif;
+.product-description {
   color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
-  position: absolute;
-  inset: 11.69rem 1.97rem 10.69rem 20.72rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.4375rem;
+  font-style: normal;
+  line-height: 1.4575rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1875rem;
 }
 
 .price h2 {
   font-family: "Fraunces", serif;
   color: hsl(158, 36%, 37%);
-  position: absolute;
-  inset: 19.25rem 8.81rem 6.87rem 20.75rem;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2rem;
 }
 
-.price p {
+span {
+  color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-size: 0.8125rem;
-  position: fixed;
-  inset: 19.56rem 4.62rem 7.13rem 29.88rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.4375rem; /* 176.923% */
+  line-height: 1.4375rem;
+  text-decoration-line: strikethrough;
 }
 
-.btn {
-  width: 14.75rem;
-  height: 3rem;
-  position: fixed;
-  inset: 23.12rem 2rem 2rem 20.75rem;
-  border-radius: 0.5rem;
+.button {
+  color: hsl(0, 0%, 100%);
   background-color: hsl(158, 36%, 37%);
-  flex-shrink: 0;
+  width: 100%;
+  height: 3rem;
+  padding-top: 0.8125rem;
+  padding-left: 5.8rem;
+  margin-top: 1.25rem;
+  border-radius: 0.5rem;
+  border-style: none;
 }
 
-.btn:hover {
-  background-color: hsl(212, 21%, 14%);
-}
-
-button {
-  /* Button Text */
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+.button-text {
   color: hsl(0, 0%, 100%);
   background-color: transparent;
-  border: none;
-  position: fixed;
+  display: inline-flex;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3rem;
-  right: 17%;
+  line-height: normal;
 }
 
-.btn img {
+.button img {
+  /*shopping cart icon */
   display: inline-flex;
-  outline: none;
-  color: hsl(0, 0%, 100%);
-  margin-right: 6;
-  position: relative;
-  left: 22%;
-  top: 35%;
-  z-index: 1;
-  height: 1rem;
+  width: 0.9rem;
+  margin-bottom: -0.1875rem;
+  margin-right: 0.3125rem;
 }
 
 .attribution {
-  display: flex;
-  text-align: center;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 75%;
   font-size: 0.6875rem;
 }
 
@@ -167,131 +141,52 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (width >= 240rem) {
-  .attribution {
-    left: 50%;
-    top: 75%;
-  }
-}
-@media screen and (width <= 24rem) {
+@media screen and (min-width: 1440px) {
   body {
     display: flex;
-    width: 23.4375rem;
-    height: 41.6875rem;
-    padding: 1.75rem 1rem;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100vh;
+    justify-content: center;
   }
-  .container {
-    width: 21.4375rem;
-    height: 38.1875rem;
-    flex-shrink: 0;
-    border-radius: 0.625rem;
+  #container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1.375rem;
+    width: 37rem;
+    height: 28rem;
   }
   .image img {
-    content: url("images/image-product-mobile.jpg");
-    width: 21.48106rem;
-    height: 28.625rem;
-    position: absolute;
-    height: auto;
-    inset: 6.81rem 0.05rem 16.47rem 0.01rem;
-    border-radius: 0.625rem;
-    padding-right: 0;
-    flex-shrink: 0;
+    content: url("/images/image-product-desktop.jpg");
+    width: auto;
+    height: 28rem;
   }
-  span {
-    inset: 16.5rem 14.19rem 20.75rem 1.5rem;
-    color: hsl(228, 12%, 48%);
-    width: 5.75rem;
-    height: 0.9375rem;
-    font-weight: 500;
-    font-size: 0.75rem;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.3125rem;
+  .category {
+    position: absolute;
+    top: 18px;
   }
   h1 {
-    font-family: "Fraunces", serif;
-    color: hsl(212, 21%, 14%);
-    inset: 4.19rem 2rem 17.94rem 20.75rem;
-    font-weight: 700;
-    width: 18.4375rem;
-    height: 4rem;
-    inset: 18.19rem 1.5rem 16rem 1.5rem;
-    font-size: 2rem;
-    font-style: normal;
-    line-height: 2rem;
-    display: flex;
+    margin-top: -4rem;
+  }
+  .button {
     position: absolute;
+    top: 22rem;
+    width: 40%;
   }
-  p {
-    font-family: "Fraunces", serif;
-    color: hsl(228, 12%, 48%);
-    font-size: 0.875rem;
-    position: absolute;
-    inset: 23.75rem 1.5rem 9.25rem 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    width: 18.4375rem;
-    height: 1.5rem;
-    line-height: 1.6rem;
+  .button-text {
+    margin-left: -0.2rem;
   }
-  .price h2 {
-    font-family: "Fraunces", serif;
-    color: hsl(158, 36%, 37%);
-    position: absolute;
-    inset: 30.44rem 11.97rem 5.75rem 1.53rem;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2rem;
-  }
-  .price p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8125rem;
-    position: fixed;
-    inset: 30.75rem 7.78rem 6rem 10.66rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4375rem;
-  }
-  .btn {
-    width: 18.4375rem;
-    height: 3rem;
-    position: fixed;
-    inset: 33.69rem 1.44rem 1.5rem 1.56rem;
-    border-radius: 0.5rem;
-    background-color: hsl(158, 36%, 37%);
-    flex-shrink: 0;
-  }
-  button {
-    /* Button Text */
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.875rem;
-    color: hsl(0, 0%, 100%);
-    background-color: transparent;
-    border: none;
-    position: fixed;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 3rem;
-    right: 37%;
-  }
-  .btn img {
+  .button img {
     display: inline-flex;
-    outline: none;
-    color: hsl(0, 0%, 100%);
-    margin-right: 6;
-    position: relative;
-    left: 28%;
-    top: 35%;
-    z-index: 1;
-    height: 1rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0.0625rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
   }
-  .attribution {
-    left: 40%;
-    top: 63%;
-    font-size: 11px;
+  .button:hover {
+    background-color: hsl(212, 21%, 14%);
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
