@@ -1,3 +1,5 @@
+/* font-sizes */
+/*mobile image */
 * {
   margin: 0;
   padding: 0;
@@ -187,4 +189,4 @@ span {
   .button:hover {
     background-color: hsl(212, 21%, 14%);
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
