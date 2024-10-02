@@ -1,5 +1,3 @@
-/* font-sizes */
-/*mobile image */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-  background-color: hsl(30, 38%, 92%);
+  background-color: $cream;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -18,7 +16,7 @@ body {
 }
 
 #container {
-  background-color: hsl(0, 0%, 100%);
+  background-color: $white;
   width: 21.4375rem;
   height: 38.1875rem;
   flex-shrink: 0;
@@ -28,9 +26,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .image img {
-  margin-top: -1.4375rem;
+    margin-top:-1.4375rem;
   width: 21.48106rem;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
@@ -41,50 +38,45 @@ body {
 .text-container {
   padding: 0 1.5rem 0 1.5rem;
 }
-
 .category {
-  color: hsl(228, 12%, 48%);
+  color: $dark-grayish-blue;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: $fw-500;
   font-style: normal;
-  font-size: 0.75rem;
+  font-size:0.75rem;
   line-height: normal;
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
   margin-top: 0.875rem;
 }
-
 h1 {
-  color: hsl(212, 21%, 14%);
+  color: $very-dark-blue;
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-style: normal;
   margin-bottom: 1rem;
   margin-top: 0.75rem;
-  font-weight: 700;
+  font-weight: $fw-700;
   line-height: 2rem;
 }
-
 .product-description {
-  color: hsl(228, 12%, 48%);
+  color: $dark-grayish-blue;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: $fw-500;
   font-style: normal;
   line-height: 1.4575rem;
   margin-bottom: 1.5rem;
 }
-
 .price {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 1.1875rem;
 }
-
 .price h2 {
   font-family: "Fraunces", serif;
-  color: hsl(158, 36%, 37%);
+  color: $dark-cyan;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -92,7 +84,7 @@ h1 {
 }
 
 span {
-  color: hsl(228, 12%, 48%);
+  color: $dark-grayish-blue;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8125rem;
   font-style: normal;
@@ -100,10 +92,9 @@ span {
   line-height: 1.4375rem;
   text-decoration-line: strikethrough;
 }
-
 .button {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(158, 36%, 37%);
+  color: $white;
+  background-color: $dark-cyan;
   width: 100%;
   height: 3rem;
   padding-top: 0.8125rem;
@@ -112,20 +103,18 @@ span {
   border-radius: 0.5rem;
   border-style: none;
 }
-
 button {
   /*button text */
-  color: hsl(0, 0%, 100%);
+  color: $white;
   background-color: transparent;
   display: inline-flex;
   border-style: none;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fw-700;
   line-height: normal;
 }
-
 .button img {
   /*shopping cart icon */
   display: inline-flex;
@@ -133,59 +122,9 @@ button {
   margin-bottom: -0.1875rem;
   margin-right: 0.3125rem;
 }
-
 .attribution {
   font-size: 0.6875rem;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-@media screen and (min-width: 1440px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-  }
-  #container {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 1.375rem;
-    width: 37rem;
-    height: 28rem;
-  }
-  .image img {
-    content: url("/images/image-product-desktop.jpg");
-    width: auto;
-    height: 28rem;
-  }
-  .category {
-    position: absolute;
-    top: 18px;
-  }
-  h1 {
-    margin-top: -4rem;
-  }
-  .button {
-    position: absolute;
-    top: 23.13rem;
-    width: 40%;
-  }
-  .button img {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 0.0625rem;
-    justify-content: center;
-    align-items: center;
-    margin-left: -16px;
-    gap: 0.72594rem;
-  }
-  .button:hover {
-    background-color: hsl(212, 21%, 14%);
-  }
-}/*# sourceMappingURL=styles.css.map */
