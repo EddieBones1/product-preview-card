@@ -97,7 +97,7 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 1.4375rem;
-  text-decoration-line: strikethrough;
+  text-decoration-line: line-through;
 }
 
 .button {
