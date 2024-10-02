@@ -153,12 +153,12 @@ span {
     position: relative;
     grid-template-columns: 1fr 1fr;
     padding-top: 1.375rem;
-    width: 37rem;
+    width: 39rem;
     height: 28rem;
   }
   .image img {
-    content: url("/images/image-product-desktop.jpg");
-    width: auto;
+    background: url("/images/image-product-desktop.jpg");
+    width: 21.10588rem;
     height: 28rem;
   }
   .category {
@@ -174,7 +174,7 @@ span {
     width: 40%;
   }
   .button-text {
-    margin-left: -0.2rem;
+    margin-left: -0.1rem;
   }
   .button img {
     display: inline-flex;
