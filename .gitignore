@@ -4,7 +4,8 @@
 #####################################################
 *.sketch
 *.fig
-
+*.scss
+*.map
 # Avoid accidental XD upload if you convert the design file
 ###############################################
 ## Please do not remove line 12 - thanks! 🙂 ##
@@ -14,3 +15,7 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+# image files
+/design/mobile-design.jpg
+/design/desktop-preview.jpg
+/design/active_states-version.png
