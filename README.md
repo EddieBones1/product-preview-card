@@ -31,10 +31,15 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 **Desktop Version**
-<img src="./design/desktop-version.png" alt="desktop-version" width="500px">
+
+<img src="./design/desktop-version.png" alt="desktop-version" height="500px">
+
 **Active States**
-<img src="./design/active-states.jpg" alt="desktop-version" width="500px">
+
+<img src="./design/active-states.jpg" alt="desktop-version" height="500px">
+
 **Mobile Version**
+
 <img src="./design/mobile-version.png" alt="desktop-version" height="500px">
 
 ### Links
