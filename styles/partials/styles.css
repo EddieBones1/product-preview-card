@@ -1,5 +1,7 @@
-
-* {
+/* Full reset */
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,8 +10,7 @@
 body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
-  width: 100%;
-  height: 100vh;
+  min-height: 100svh;
   padding: 1.75rem 1rem;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +20,6 @@ body {
 #container {
   background-color: hsl(0, 0%, 100%);
   width: 21.4375rem;
-  height: 38.1875rem;
   flex-shrink: 0;
   border-radius: 0.625rem;
   display: flex;
@@ -29,11 +29,10 @@ body {
 }
 
 .image img {
+  width: 21.5rem;
   margin-top: -1.4375rem;
-  width: 21.48106rem;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
-  height: auto;
   flex-shrink: 0;
 }
 
@@ -79,9 +78,10 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1.1875rem;
+  transform: translateY(-39%);
 }
 
-.price h2 {
+.price p {
   font-family: "Fraunces", serif;
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
@@ -109,6 +109,7 @@ span {
   margin-top: 1.25rem;
   border-radius: 0.5rem;
   border-style: none;
+  transform: translateY(-38%);
 }
 
 .button-text {
@@ -133,31 +134,25 @@ span {
 
 .attribution {
   font-size: 0.6875rem;
+  display: flex;
+  transform: translate(15%, 77%);
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 1440px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-  }
+@media screen and (min-width: 90rem) /*1440px*/ {
   #container {
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr;
     padding-top: 1.375rem;
-    width: 39rem;
+    width: 40rem;
     height: 28rem;
   }
   .image img {
-    width: 21.10588rem;
-    height: 28rem;
+    object-fit: fill;
   }
   .category {
     position: absolute;
@@ -165,14 +160,21 @@ span {
   }
   h1 {
     margin-top: -4rem;
+    padding-right: 2rem;
   }
+  .product-description {
+	padding-right: 1.5rem;
+}
+.price{
+  transform:translateY(5%);
+}
   .button {
     position: absolute;
-    top: 22rem;
-    width: 40%;
+    width: 14.75rem;
+    transform: translateY(15%);
   }
   .button-text {
-    margin-left: -0.1rem;
+    margin-left: 0.1rem;
   }
   .button img {
     display: inline-flex;
@@ -186,4 +188,7 @@ span {
   .button:hover {
     background-color: hsl(212, 21%, 14%);
   }
-}/*# sourceMappingURL=styles.css.map */
+  .attribution {
+    transform: translate(35%, 77%);;
+  }
+} /*# sourceMappingURL=styles.css.map */
