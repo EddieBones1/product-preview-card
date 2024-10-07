@@ -152,6 +152,7 @@ span {
     height: 28rem;
   }
   .image img {
+    width: 18.75rem;
     object-fit: fill;
   }
   .category {
@@ -163,11 +164,11 @@ span {
     padding-right: 2rem;
   }
   .product-description {
-	padding-right: 1.5rem;
-}
-.price{
-  transform:translateY(5%);
-}
+    padding-right: 1.5rem;
+  }
+  .price {
+    transform: translateY(5%);
+  }
   .button {
     position: absolute;
     width: 14.75rem;
@@ -189,6 +190,6 @@ span {
     background-color: hsl(212, 21%, 14%);
   }
   .attribution {
-    transform: translate(35%, 77%);;
+    transform: translate(35%, 77%);
   }
 } /*# sourceMappingURL=styles.css.map */
